@@ -38,7 +38,8 @@ $(document).ready(function() {
     let rando = Math.floor(Math.random() * 13);
     let randurl = gif_arr[rando];
     $('#homeHeading').html(text_arr[rando]); //the response text div id
-    $('#header').css('background-image', randurl); //the div holding the gif id
+    $('#gif').html(`<img src=${gif_arr[rando]}></img>`);
+
     $('#fakeq').val(''); //the text input id
   });
 });
